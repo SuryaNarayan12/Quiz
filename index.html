@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz</title>
+  <title>Quiz App</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="heading">Test Your Knowledge</h1>
+  <h1 id="heading">Test Your Knowledge</h1>
+  <div class="questions hidden">
+    <div id="question-number"></div>
+    <h2 id="question">Question</h2>
+    <div id="option-list"></div>
+    <button id="next-btn" class="hidden">Next</button>
+  </div>
   <div class="container">
-    
     <div class="left">
       <div id="image-container">
         <img src="assets/wise_owl.png" alt="Wise Owl Mascot">
@@ -25,11 +30,17 @@
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
           </select>
-          <button id="start-btn" type="submit">Start Quiz</button>
+          <button id="start-btn" type="button">Start Quiz</button>
         </form>
       </div>
     </div>
   </div>
+  <div id="result-screen" class="hidden">
+    <h2>Your Score</h2>
+    <p id="score-text"></p>
+    <button id="restart-btn">Restart</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
