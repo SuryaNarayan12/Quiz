@@ -21,7 +21,7 @@ body {
 
 #heading {
   margin: 30px;
-  font-size: 2.2rem;
+  font-size: 3.5rem;
   color: #2c2c2c;
 }
 
@@ -75,10 +75,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
 #difficultyContainer h2 {
   margin-bottom: 20px;
+}
+
+#difficulty-form{
+  margin-top: 15px;
+  width: 310px;
 }
 
 #difficulty-select {
@@ -106,6 +113,10 @@ body {
 #start-btn:hover, #next-btn:hover, #restart-btn:hover {
   background: linear-gradient(135deg, #d17a22, #ef9d43);
   transform: translateY(-3px) scale(1.03);
+}
+
+#start-btn{
+  width: 245px;
 }
 
 #next-btn{
@@ -156,4 +167,12 @@ body {
 #score-text {
   font-size: 1.5rem;
   margin: 20px 0;
+}
+
+#timer {
+  font-size: 1.2rem;
+  margin: 12px 0;
+  color: #d17a22;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
